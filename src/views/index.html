@@ -4,43 +4,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
 
+    <title>Tienda Online-Bsale</title>
 
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="four columns">
+                    <img src="img/logobsale.jpg" id="logo">
+                </div>
+                <div class="two columns u-pull-right">
+                    <ul>
+                        <li class="submenu">
+                            <img src="img/cart.png" id="img-carrito">
+                            <div id="carrito">
+                                <table id="lista-carrito" class="u-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th>Cantidad</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                                <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-    <title>Tienda Online</title>
+    </header>
 
-    <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand">Bsale Ecommerce</a>
+    <header>
+        <div class="jumbotron">
+            <div class="container-info">
+                <h1 class="text-center">Busca tu Snack y trago</h1>
+            </div>
             <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
+                <div class="container-fluid">
+                    <div class="row" id="resultado"></div>
+                    <button class="btn btn-outline-danger" id="name" type="submit">Buscalo Aquí</button>
             </form>
+            </div>
         </div>
-    </nav>
+    </header>
 
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="four columns">
+                    <nav id="principal" class="menu">
+                        <a class="enlace" href="#">Soporte</a>
+                        <a class="enlace" href="#">Temas</a>
+                    </nav>
+                </div>
+                <div class="four columns">
+                    <nav id="secundaria" class="menu">
+                        <a class="enlace" href="#">¿Quienes Somos?</a>
+                        <a class="enlace" href="#">Empleo</a>
+                        <a class="enlace" href="#">Blog</a>
+                    </nav>
+                </div>
+            </div>
         </div>
-    </div>
-
-
-
+    </footer>
 </head>
 
 <body>
-
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
 
 </body>
 
