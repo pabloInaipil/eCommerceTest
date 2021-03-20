@@ -2,7 +2,8 @@ const express = require('express');
 const app = express();
 
 //Settings
-app.set('port', process.env.PORT || 3000);
+var port = normalizePort(process.env.PORT || 3000);
+app.set('port', port);
 
 // Add Access Control Allow Origin headers
 app.use((req, res, next) => {
